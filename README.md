@@ -114,7 +114,7 @@ python -m http.server 8000
 ## 👤 Auteur
 
 **Maxime Fau** — [@Maxime288](https://github.com/Maxime288)
-Projet réalisé dans le cadre d'une formation vers le titre professionnel **Administrateur d'Infrastructures Sécurisées (AIS)**.
+
 
 ## 📄 Licence
 
