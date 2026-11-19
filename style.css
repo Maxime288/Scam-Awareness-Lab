@@ -1,0 +1,285 @@
+
+/* ========================================
+   CONFIGURATION GÉNÉRALE
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #0866c5;
+    color: white;
+}
+
+/* ========================================
+   ÉCRAN PRINCIPAL
+======================================== */
+
+.screen {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #0866c5;
+    padding: 35px 50px;
+}
+
+/* ========================================
+   BANDEAU PÉDAGOGIQUE
+======================================== */
+
+.simulation-banner {
+    display: inline-block;
+    padding: 9px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(0, 0, 0, 0.15);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+
+/* ========================================
+   CONTENU PRINCIPAL
+======================================== */
+
+.alert-content {
+    max-width: 620px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Visage triste */
+
+.sad-face {
+    font-size: 65px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    line-height: 1;
+}
+
+/* Titre */
+
+h1 {
+    font-size: 27px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+/* Description */
+
+.description {
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 590px;
+    color: #d6eaff;
+    margin-bottom: 20px;
+}
+
+/* ========================================
+   LISTE DES RISQUES
+======================================== */
+
+.threats {
+    margin-bottom: 25px;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.threats ul {
+    padding-left: 20px;
+}
+
+/* ========================================
+   AVERTISSEMENT
+======================================== */
+
+.warning {
+    font-size: 13px;
+    line-height: 1.7;
+    max-width: 590px;
+    margin-bottom: 30px;
+}
+
+/* ========================================
+   INFORMATIONS ET QR CODE
+======================================== */
+
+.information {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+/* Véritable QR code */
+
+.qr-code {
+    width: 78px;
+    height: 78px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+    background: white;
+}
+
+.information-text {
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.information-text a {
+    color: white;
+    font-weight: bold;
+}
+
+.small {
+    font-size: 10px;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+/* ========================================
+   SUPPORT ET CONSEILS
+======================================== */
+
+.support {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.support strong {
+    font-size: 14px;
+}
+
+/* ========================================
+   LOGO WINDOWS DROIT
+======================================== */
+
+.windows-logo {
+    position: absolute;
+    right: 12%;
+    top: 35%;
+    width: 140px;
+    height: 120px;
+}
+
+.window-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+
+    width: 100%;
+    height: 100%;
+
+    transform: none;
+}
+
+.window-grid span {
+    display: block;
+    background: white;
+}
+
+/* ========================================
+   PIED DE PAGE
+======================================== */
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    opacity: 0.75;
+}
+
+/* ========================================
+   RESPONSIVE - TABLETTES ET MOBILES
+======================================== */
+
+@media screen and (max-width: 700px) {
+
+    .screen {
+        padding: 25px;
+    }
+
+    .alert-content {
+        max-width: 100%;
+    }
+
+    .sad-face {
+        font-size: 50px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+    .windows-logo {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 65px;
+        height: 55px;
+        margin: 30px 0;
+    }
+
+    .qr-code {
+        width: 65px;
+        height: 65px;
+    }
+
+    .support {
+        font-size: 15px;
+    }
+
+    footer {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        margin-top: 35px;
+    }
+}
+
+/* ========================================
+   PETITS ÉCRANS
+======================================== */
+
+@media screen and (max-width: 400px) {
+
+    .screen {
+        padding: 20px;
+    }
+
+    .simulation-banner {
+        font-size: 9px;
+        letter-spacing: 0.4px;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    .information {
+        gap: 10px;
+    }
+
+    .information-text {
+        font-size: 10px;
+    }
+
+    .qr-code {
+        width: 55px;
+        height: 55px;
+    }
+}
